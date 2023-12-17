@@ -1,4 +1,3 @@
-import React from 'react';
 import img_marketing from '../images/logo_marketing.jpg';
 
 function Marketing() {
