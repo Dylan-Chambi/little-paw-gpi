@@ -3,9 +3,10 @@ import logo from '../images/logo.png';
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "@emotion/react";
 
-// const pages = ['CIO', 'Gerencia', 'Software', 'Marketing', 'Seguridad', 'IT', 'Contacto']
-
 const pages = [{
+    name: '¿Quiénes somos?',
+    path: 'quienes-somos'
+}, {
     name: 'CIO',
     path: 'cio'
 }, {
