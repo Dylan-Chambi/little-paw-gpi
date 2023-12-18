@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useTheme } from "@emotion/react";
 import DocumentViewPopup from "../components/DocumentViewPopup";
 import * as workflowMark from '../images/workflow_marketing.png';
-import workflowMKT from '../assets/Workflow_marketing.pdf';
+import workflowMKT from '../assets/workflow_marketing.pdf';
 import '@splidejs/react-splide/css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
