@@ -4,14 +4,13 @@ import * as jerarquico from '../images/jerarquico.jpg';
 import Fade from '@mui/material/Fade';
 import DocumentViewPopup from "../components/DocumentViewPopup";
 import { useState } from "react";
-import { useTheme } from "@emotion/react";
 import control_calidad from "../assets/control_calidad.pdf";
 import gestion_riegos from "../assets/gestion_riesgos.pdf";
 import analisis_costos from "../assets/analisis_costos.pdf";
 import plan_sostenibilidad from "../assets/plan_sostenibilidad.pdf";
 
 export const Home = () => {
-    const theme = useTheme();
+ 
     const [open, setOpen] = useState(false);
     const [pdfFile, setPdfFile] = useState(null);
     const [buttonDisabled, setButtonDisabled] = useState(true);

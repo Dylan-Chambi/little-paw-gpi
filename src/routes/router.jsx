@@ -5,6 +5,7 @@ import Marketing from "../pages/Marketing";
 import {SoftwarePage} from "../pages/Software.jsx";
 import {CIOPage} from "../pages/CIO.jsx";
 import {Home} from "../pages/Home.jsx";
+import { GerenciaAdministrativaPage } from "../pages/GerenciaAdministrativa.jsx";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
       children: [
         { path: "/", element:  <Home/>},
         { path: "/cio", element: <CIOPage/>},
-        { path: "/gerencia", element: <h1>Gerencia</h1> },
+        { path: "/gerencia", element:  <GerenciaAdministrativaPage/>},
         { path: "/software", element: <SoftwarePage/> },
         { path: "/marketing", element: <Marketing /> },
         { path: "/seguridad", element: <h1>Seguridad</h1> },
