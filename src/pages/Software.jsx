@@ -4,9 +4,9 @@ import Fade from '@mui/material/Fade';
 import DocumentViewPopup from "../components/DocumentViewPopup";
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
-import manualSoftware from '../assets/Manual de Funciones - Software.pdf';
-import actividadesSoftware from '../assets/Actividades - Software.pdf';
-import workflowSoftware from '../assets/Workflow - Software.pdf';
+import manualSoftware from '../assets/manual_de_funciones_software.pdf';
+import actividadesSoftware from '../assets/actividades_software.pdf';
+import workflowSoftware from '../assets/workflow_software.pdf';
 import * as workflowImg from '../images/Workflow - Software.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 

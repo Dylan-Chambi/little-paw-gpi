@@ -4,9 +4,9 @@ import Fade from '@mui/material/Fade';
 import DocumentViewPopup from "../components/DocumentViewPopup";
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
-import manualCIO from '../assets/Manual de Funciones - CIO.pdf';
-import actividadesCIO from '../assets/Actividades - CIO.pdf';
-import workflowCIO from '../assets/Workflow - CIO.pdf';
+import manualCIO from '../assets/manual_de_funciones_CIO.pdf';
+import actividadesCIO from '../assets/actividades_CIO.pdf';
+import workflowCIO from '../assets/workflow_CIO.pdf';
 import * as workflowImg from '../images/Workflow - CIO.png';
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 
