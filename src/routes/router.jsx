@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
-import { InfTechPage } from "../pages/inf_tech/page";
+import { InfTechPage } from "../pages/InfTech";
 import Marketing from "../pages/Marketing";
 
 const router = createBrowserRouter([
