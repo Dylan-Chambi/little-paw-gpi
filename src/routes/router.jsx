@@ -4,13 +4,14 @@ import { InfTechPage } from "../pages/InfTech";
 import Marketing from "../pages/Marketing";
 import {SoftwarePage} from "../pages/Software.jsx";
 import {CIOPage} from "../pages/CIO.jsx";
+import {Home} from "../pages/Home.jsx";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
       children: [
-        { path: "/", element: <h1>Home</h1> },
+        { path: "/", element:  <Home/>},
         { path: "/cio", element: <CIOPage/>},
         { path: "/gerencia", element: <h1>Gerencia</h1> },
         { path: "/software", element: <SoftwarePage/> },
