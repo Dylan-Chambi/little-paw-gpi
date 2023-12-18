@@ -6,6 +6,7 @@ import {SoftwarePage} from "../pages/Software.jsx";
 import {CIOPage} from "../pages/CIO.jsx";
 import {Home} from "../pages/Home.jsx";
 import {Seguridad} from "../pages/Seguridad.jsx";
+import {Contacto} from "../pages/Contacto.jsx";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
         { path: "/marketing", element: <Marketing /> },
         { path: "/seguridad", element: <Seguridad /> },
         { path: "/it", element: <InfTechPage /> },
-        { path: "/contacto", element: <h1>Contacto</h1> },
+        { path: "/contacto", element: <Contacto /> },
       ],
     },
   ]);
