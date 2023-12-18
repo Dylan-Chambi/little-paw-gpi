@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
-import { InfTechPage } from "../pages/inf_tech/page";
+import { InfTechPage } from "../pages/InfTech";
 import Marketing from "../pages/Marketing";
 import {SoftwarePage} from "../pages/software/page.jsx";
 import {CIOPage} from "../pages/cio_tech/page.jsx";
