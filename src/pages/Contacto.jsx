@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -31,14 +30,15 @@ export const Contacto = () => {
   const cardContainerStyle = {
     display: 'flex',
     justifyContent: 'space-around',
-    flexWrap: 'wrap', // Permite que las tarjetas se envuelvan si no caben en una sola fila
-    padding: '20px', // Espaciado entre tarjetas
+    flexWrap: 'wrap',
+    padding: '20px',
   };
   const cardStyle = {
-    width: 300, // Ancho de cada tarjeta
-    margin: '10px', // Espaciado entre tarjetas
+    width: 300,
+    margin: '10px',
     backgroundColor: 'rgba(247, 215, 131, 0.8)',
     borderRadius: '16px',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // Añadir sombra a la tarjeta
   };
   const mediaStyle = {
     height: 500,
