@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import * as home_image from '../images/home_banner.jpg';
 import * as jerarquico from '../images/jerarquico.jpg';
+import * as interaccion_empresa from '../images/interaccion_empresa.png';
 import Fade from '@mui/material/Fade';
 import DocumentViewPopup from "../components/DocumentViewPopup";
 import { useState } from "react";
@@ -86,6 +87,14 @@ export const Home = () => {
                         Diagrama Jerárquico
                     </Typography>
                     <img src={jerarquico.default} alt='Diagrama Jerarquico' width='75%' height='75%' style={{ marginBottom: '2rem' }} />
+                </Box>
+            </Grid>
+            <Grid item xs={12}>
+                <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100%', padding: '4rem' }}>
+                    <Typography variant='h4' sx={{ marginBottom: '2rem' }}>
+                        Diagrama de Interacciones
+                    </Typography>
+                    <img src={interaccion_empresa.default} alt='Diagrama Interacciones' width='45%' height='45%' style={{ marginBottom: '2rem' }} />
                 </Box>
             </Grid>
             <Grid item xs={12}>
