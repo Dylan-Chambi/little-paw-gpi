@@ -1,13 +1,13 @@
-import img_marketing from "../../images/logo_marketing.jpg";
+import img_marketing from "../images/logo_marketing.jpg";
 import { Button, Card, Grid, Typography, Box
  } from "@mui/material";
-import manual from "../../assets/manual_marketing.pdf";
-import actividades from "../../assets/actividades_marketing.pdf";
+import manual from "../assets/manual_marketing.pdf";
+import actividades from "../assets/actividades_marketing.pdf";
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
-import DocumentViewPopup from "../../components/DocumentViewPopup";
-import * as workflowMark from '../../images/workflow_marketing.png';
-import workflowMKT from '../../assets/Workflow_marketing.pdf';
+import DocumentViewPopup from "../components/DocumentViewPopup";
+import * as workflowMark from '../images/workflow_marketing.png';
+import workflowMKT from '../assets/Workflow_marketing.pdf';
 
 function Marketing() {
   const theme = useTheme();
