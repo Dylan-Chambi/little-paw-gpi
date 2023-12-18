@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
 import { InfTechPage } from "../pages/InfTech";
 import Marketing from "../pages/Marketing";
-import {SoftwarePage} from "../pages/software/page.jsx";
-import {CIOPage} from "../pages/cio_tech/page.jsx";
+import {SoftwarePage} from "../pages/Software.jsx";
+import {CIOPage} from "../pages/CIO.jsx";
 
 const router = createBrowserRouter([
     {
@@ -11,7 +11,6 @@ const router = createBrowserRouter([
       element: <Layout />,
       children: [
         { path: "/", element: <h1>Home</h1> },
-        { path: "/quienes-somos", element: <h1>¿Quiénes somos?</h1> },
         { path: "/cio", element: <CIOPage/>},
         { path: "/gerencia", element: <h1>Gerencia</h1> },
         { path: "/software", element: <SoftwarePage/> },

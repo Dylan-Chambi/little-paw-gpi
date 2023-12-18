@@ -1,19 +1,44 @@
 import { Box, Button, Card, Grid, Typography } from "@mui/material";
-import * as cio_image from '../../images/cio_banner.jpg';
+import * as cio_image from '../images/cio_banner.jpg';
 import Fade from '@mui/material/Fade';
-import DocumentViewPopup from "../../components/DocumentViewPopup";
+import DocumentViewPopup from "../components/DocumentViewPopup";
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
-import manualCIO from '../../assets/Manual de Funciones - CIO.pdf';
-import actividadesCIO from '../../assets/Actividades - CIO.pdf';
-import workflowCIO from '../../assets/Workflow - CIO.pdf';
-import * as workflowImg from '../../images/Workflow - CIO.png';
+import manualCIO from '../assets/Manual de Funciones - CIO.pdf';
+import actividadesCIO from '../assets/Actividades - CIO.pdf';
+import workflowCIO from '../assets/Workflow - CIO.pdf';
+import * as workflowImg from '../images/Workflow - CIO.png';
+import {Splide, SplideSlide} from "@splidejs/react-splide";
 
 export const CIOPage = () => {
     const theme = useTheme();
     const [open, setOpen] = useState(false);
     const [pdfFile, setPdfFile] = useState(null);
     const [buttonDisabled, setButtonDisabled] = useState(true);
+
+    const toolsCards = [
+        {
+            title: 'Google Drive',
+            description: 'Google Drive es un servicio de alojamiento de archivos. Fue introducido por Google el 24 de abril de 2012. Google Drive es un rebranding de Google Docs que ha existido desde 2010.',
+            image: "https://play-lh.googleusercontent.com/t-juVwXA8lDAk8uQ2L6d6K83jpgQoqmK1icB_l9yvhIAQ2QT_1XbRwg5IpY08906qEw"
+        },
+        {
+            title: 'Microsoft Word',
+            description: 'Microsoft Word es un programa informático orientado al procesamiento de textos. Fue creado por la empresa Microsoft, y viene integrado predeterminadamente en el paquete ofimático denominado Microsoft Office.',
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png"
+        },
+        {
+            title: 'Microsoft Excel',
+            description: 'Microsoft Excel es un programa informático desarrollado y distribuido por Microsoft Corp. para entornos Windows, macOS, iOS y Android. Es un software que permite realizar tareas financieras y contables.',
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1101px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
+        },
+        {
+            title: 'Notion',
+            description: 'Notion es una herramienta de gestión de proyectos que permite a los equipos colaborar en tiempo real. Se puede utilizar para gestionar proyectos, tareas, notas, bases de conocimiento, bases de datos, wikis, y mucho más.',
+            image: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+        },
+
+    ]
 
     return (
         <Grid container>
@@ -180,6 +205,50 @@ export const CIOPage = () => {
                     }}>
                         Ver Workflow
                     </Button>
+                </Box>
+            </Grid>
+            <Grid item xs={12} sx={{ background: theme.palette.primary.main, color: 'white' }}>
+                <Box sx={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', textAlign: 'center', padding: '4rem' }}>
+                    <Typography variant='h4' sx={{ marginBottom: '2rem' }}>
+                        Herramientas
+                    </Typography>
+                    <Box
+                        sx={{
+                            marginBottom: '4rem',
+                            paddingX: '1rem',
+                        }}
+                    >
+                        <Splide aria-label="My Favorite Images"
+                                options={{
+                                    type: 'loop',
+                                    perPage: 3,
+                                    perMove: 1
+                                }}
+                        >
+                            {toolsCards.map((card, index) => (
+                                <SplideSlide key={index}>
+                                    <Card sx={{
+                                        padding: '2rem',
+                                        margin: '1rem',
+                                        textAlign: 'center',
+                                        background: '#f5f5f5',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
+                                    }}>
+                                        <Typography variant='h5' sx={{ marginBottom: '2rem' }}>
+                                            {card.title}
+                                        </Typography>
+                                        <img src={card.image} alt={card.title} style={{ marginBottom: '2rem', height: '100px' }} />
+                                        <Typography variant='body1' sx={{ textAlign: 'center' }}>
+                                            {card.description}
+                                        </Typography>
+                                    </Card>
+                                </SplideSlide>
+                            ))}
+                        </Splide>
+                    </Box>
                 </Box>
             </Grid>
             {pdfFile &&

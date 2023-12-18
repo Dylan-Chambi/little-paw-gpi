@@ -4,9 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useTheme } from "@emotion/react";
 
 const pages = [{
-    name: '¿Quiénes somos?',
-    path: 'quienes-somos'
-}, {
     name: 'CIO',
     path: 'cio'
 }, {
